@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/movie.css">
+    <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
+
+    <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+
+
+</head>
+<body>
+    <header>
+        <h1><a href="index.html"><img src="img/logo.png" alt=""></a></h1>
+        <nav>
+            <ul id="gnb" class="clearfix">
+                <li><a href="mori_look.html">Mori Look</a></li>
+                <li><a href="mori_movie.html">Mori Movie</a></li>
+                <li><a href="mori_house.html">Mori Girl’s House</a></li>
+                <li class="login"><a href="./login.html">login/join</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="wrap">
+
+        <div class="movie">
+            <h2>Chony Vintage Pick 영화</h2>
+            <p> 초니 빈티지가 추천하는 모리걸 영화<br>
+                ☘️따뜻한 색감의 영상과 모리걸 스타일을 구경해보아요☘️
+            </p>
+        </div>
+
+
+        <div class="slick_gallery">
+            <div class="box"><img src="img/slide1.jpg"></div>
+            <div class="box"><img src="img/slide2.jpg"></div>
+            <div class="box"><img src="img/slide3.jpg"></div>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            $('.slick_gallery').slick({
+                arrows : true,
+                dots: true, // 슬라이드로 가는 동그라미
+                autoplay: true, // 자동으로 슬라이드를 넘겨줌
+                infinite: true, // 무한 반복
+                slidesToScroll: 1, // 넘겨질 슬라이드 수
+            //     prevArrow: '<button class="slide-arrow prev-arrow"><</button>',
+            // nextArrow: '<button class="slide-arrow next-arrow">></button>',
+            });
+        });
+    </script>
+
+    <footer id="footer" class="clearfix">
+        <h1 class="fot_logo">Chony Vintage</h1>
+        <div class="copy">
+            <p>COPYRIGHTⓒ by WEBDESIGN. ALL RIGHTS RESERVED</p>
+        </div>
+        <ul class="sns">
+            <li><a href="https://www.instagram.com/chony_vtg" target="blank"><img src="img/insta_icon.png"></a></li>
+            <li><a href="https://blog.naver.com/qkralswjd341" target="blank"><img src="img/blog.png"></a></li>
+        </ul>
+    </footer>
+
+
+</body>
+</html>
