@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.clearfix::before , .clearfix::after { clear: both; content: ''; display: block;}
+
+/* reset */
+
+body { background-color: #e8f1c6; }
+
+ul { list-style: none; }
+a { text-decoration: none; color: white;}
+
+#wrap {
+    height: 700px;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* header */
+
+header { background-color: #6fa035; height: 65px; text-align: center;}
+header h1 { float: left; padding: 12px; margin: 0 25px; }
+header h1 img { width: 170px; }
+header nav { float: right; padding: 10px; width: 700px; }
+
+/* gnb */
+
+#gnb li { float: left; width: 25%;  text-align: center;  }
+#gnb > li a { display: block; padding: 10px; font-size: 17px;}
+#gnb > li a:hover { color: #ddbd5b; transition: 0.5s; }
+
+/* gnb login */
+
+#gnb li.login { line-height: 25px ;}
+
+#gnb li.login a {  font-size:12px; color:  white;}
+
+#gnb li.login a:hover { color: #494949; transition: 0.2s; text-decoration: underline;}
+
+/* house_intro */
+
+#house_intro {
+    text-align: center;
+    margin-top: 60px;
+}
+
+#house_intro h2 {
+    font-size: 32px;
+}
+
+#house_ul li {
+    float: left;
+    width: 33.3%;
+}
+
+/* house_ul */
+
+#house_ul {
+    margin-top: 70px;
+}
+
+#house_ul dt {
+    font-size: 23px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+#house_ul li:hover img {
+    transform: scale(1.1);
+    transition: all 0.2s linear;
+}
+
+
+.go {
+    padding-top: 20px;
+    font-size: 15px;
+}
+
+
+
+.go a {
+    color: #002f1e;
+    font-weight: bold;
+    border: 2px solid #788800;
+    padding: 3px;
+    border-radius: 5%;
+}
+
+.go a:visited {
+    color: #788800;
+    font-weight: bold;
+}
+
+.go a:hover {
+    color: #46b58c;
+    font-weight: bold;
+}
+
+.go a:active {
+    color: #002d1c;
+}
+
+
+
+
+/* footer */
+
+#footer { background-color: #1e3910; height: 100px; width: 100%; }
+#footer h1 { padding: 0 50px; float: left; color: #d1d1d1; font-size: 15px; border-right: 2px solid #6e6e6e; line-height: 100px;}
+
+.copy { text-align: center; line-height: 100px; width: 1000px; float: left; color: #d1d1d1; font-size: 15px;}
+
+.sns { float: right; width: 200px; margin-top: 35px; text-align: center;}
+.sns li { float: left; width: 40px;}
+.sns img { width: 28px;}
